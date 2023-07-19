@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background: #333;
+  color: #00d1b2;
+  padding: 25px;
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+
+.dropdown-menu {
+  padding: 10px;
+  display: none;
+} 
+
+.dropdown-menu.is-active {
+  display: block;
+}
+
+select {
+  background-color: #00d1b2;
+  color: white;
+  border: none;
+  font-family: Arial, sans-serif;
+  width: 120px;
+  height: 35px;
+  border-radius: 5%;
+}
+
+select option {
+  color: white;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Speechify</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+
+<body>
+
+  <section class="section">
+    <div class="container">
+      <header>
+        <class="title">Speechify
+      </header>
+
+      <button class="button is-primary" id="startButton">Start</button>
+      <button class="button is-primary" id="stopButton">Stop</button>
+
+      <div id="speechContainer" class="mt-4">
+        <h2 class="subtitle">Speech Input</h2>
+        <textarea class="textarea" id="speechInput" rows="4" cols="50"
+          placeholder="Select a language below then hit the start button and begin speaking. Hit the stop button when you are done speaking and your translated text will appear below"></textarea>
+      </div>
+
+      <div id="translationContainer" class="mt-4">
+        <h2 class="subtitle">Translation</h2>
+        <select class="dropdown-item" id="selectLang" style="color:white">
+        </select>
+
+        <div id="postContainer" class="mt-4">
+          <textarea class="textarea" id="postInput" rows="4" cols="50" placeholder="To share your translated text, just copy the text and click share!"></textarea>
+        </div>
+
+        <button class="button is-primary mt-4" id="shareButton">Share</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white py-5 px-5">
+      <h3 class="title mb-6">Share</h3>
+      <ul>
+        <li>share via Facebook: <a href = "https://www.facebook.com/">Facebook</a></li>
+        <li>share via email: <a href = "mailto:youremailhere@example.com">Email</a></li>
+        <li>share via Twitter: <a href = "https://twitter.com/i/flow/login?lang=en">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <script src="./assets/country.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>
